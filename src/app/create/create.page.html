@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-weight: 600; text-align: center; font-family: Geneva, Verdana, sans-serif; color: black;">CREATE <span style="color: crimson;">RECORD</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <form [formGroup]="formvalue" style="margin: 10px;"  >
+    <ion-label class="form-label"> Name</ion-label>
+    <ion-input class="form-control" formControlName="name"></ion-input>
+    <ion-label class="form-label">Email id</ion-label>
+    <ion-input class="form-control" formControlName="email"></ion-input>
+    <ion-label class="form-label">Age</ion-label>
+    <ion-input class="form-control" formControlName="age"></ion-input>
+    <ion-label class="form-label">City name</ion-label>
+    <ion-input class="form-control" formControlName="city"></ion-input>
+    <ion-label class="form-label">Pincode</ion-label>       
+    <ion-input class="form-control" formControlName="pincode"></ion-input>
+    <ion-label class="form-label">Mobile Number</ion-label>
+    <ion-input class="form-control" formControlName="mobile"></ion-input>
+  </form>
+  
+  <ion-button style="margin-left: 20px;" color='danger'(click)="createinterdetail()" >SUBMIT</ion-button>  
+  <ion-button style="margin-left: 20px;" color='danger'(click)="createcancel()" >CANCEL</ion-button>  
+ 
+</ion-content>

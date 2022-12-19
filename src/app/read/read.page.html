@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title
+      style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center; font-size: 30px; color: crimson;">
+      DISPLAY DETAIL</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="container" style="font-size: 18px; margin: 10px;">
+    <!-- <ion-item class="item"> -->
+      <img src="https://www.kindpng.com/picc/m/423-4238636_boy-cartoon-cartoon-male-face-png-transparent-png.png" alt="">
+      <ion-label class="form-label">Name:</ion-label>
+      {{list.name}} <br>
+      <ion-label class="form-label">Email:</ion-label>
+      {{list.email}}<br>
+      <ion-label class="form-label">Age:</ion-label>
+      {{list.age}} <br>
+      <ion-label class="form-label">City:</ion-label>
+      {{list.city}} <br>
+      <ion-label class="form-label">Pincode:</ion-label>
+      Pincode:{{list.pincode}} <br>
+      <ion-label class="form-label">Phone Number:</ion-label>
+      {{list.mobile}}
+    <!-- </ion-item> -->
+    <div style="text-align:center;">
+
+      <ion-button type="button" color="danger" (click)="displayinterclose()" id="close">CLOSE</ion-button>
+    </div>
+
+  </div>
+</ion-content>

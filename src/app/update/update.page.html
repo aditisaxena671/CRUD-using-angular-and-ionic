@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-weight: 600; text-align: center; font-family: Geneva, Verdana, sans-serif; color: black;">UPDATE <span style="color: crimson;">DETAILS</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <form [formGroup]="formvalue" style="font-family: Geneva, Verdana, sans-serif; margin: 10px;">
+      <ion-label class="form-label">Name:</ion-label>
+      <ion-input class="form-control" formControlName="name"></ion-input>
+      <ion-label class="form-label">Email id:</ion-label>
+      <ion-input class="form-control" formControlName="email"></ion-input>
+      <ion-label class="form-label">Age:</ion-label>
+      <ion-input class="form-control" formControlName="age"></ion-input>
+      <ion-label class="form-label">City name:</ion-label>
+      <ion-input class="form-control" formControlName="city"></ion-input>
+      <ion-label class="form-label">Pincode:</ion-label>
+      <ion-input class="form-control" formControlName="pincode"></ion-input>
+      <ion-label class="form-label">Mobile Number:</ion-label>
+      <ion-input class="form-control" formControlName="mobile"></ion-input>
+    </form>
+    <div style="text-align: center;">
+
+      <ion-button type="button" style="margin-left: 20px;" color="danger" (click)="updateintern()">UPDATE</ion-button>
+      <ion-button type="button" style="margin-left: 20px;"color="danger" (click)="updateinternclose()" id="close">CANCEL</ion-button>
+    </div>
+  </div>
+</ion-content>
